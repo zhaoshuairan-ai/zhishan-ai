@@ -1,0 +1,36 @@
+[
+  {
+    "slug": "example-entry-1",
+    "title": "示例条目：某食品添加剂",
+    "category": "additive",
+    "summary": "一句话概述这个物质是什么、常见用途。",
+    "content": "两三句话解释它的作用、在哪些食品中常见，以及在标准允许范围内使用是合规的。不要写「有毒/不安全」这类结论。",
+    "aliases": "别名1,别名2",
+    "keywords": "关键词1 关键词2 用途",
+    "usage_note": "看到它时应该怎么理解。",
+    "source_name": "GB 2760《食品安全国家标准 食品添加剂使用标准》（名称引用）",
+    "source_url": "https://openstd.samr.gov.cn/bzgk/gb/",
+    "source_type": "standard_name",
+    "verification_status": "pending",
+    "version": "1.0",
+    "is_featured": false,
+    "sort_order": 900
+  },
+  {
+    "slug": "example-entry-2",
+    "title": "示例条目：某营养术语",
+    "category": "nutrition",
+    "summary": "一句话解释这个术语的含义。",
+    "content": "补充说明它在营养标签上怎么体现、怎么换算。",
+    "aliases": "别名",
+    "keywords": "营养 标签 换算",
+    "usage_note": "看标签时如何使用这个信息。",
+    "source_name": "《中国居民膳食指南（2022）》（来源名称引用）",
+    "source_url": "https://www.cnsoc.org/",
+    "source_type": "public_health",
+    "verification_status": "pending",
+    "version": "1.0",
+    "is_featured": false,
+    "sort_order": 901
+  }
+]

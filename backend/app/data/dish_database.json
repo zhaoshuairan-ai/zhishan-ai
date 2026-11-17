@@ -1,0 +1,708 @@
+[
+  {
+    "dish_name": "西红柿炒鸡蛋",
+    "aliases": [
+      "番茄炒蛋",
+      "番茄炒鸡蛋",
+      "西红柿炒蛋"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 86,
+    "protein_per_100g": 4.5,
+    "fat_per_100g": 5.2,
+    "carbs_per_100g": 5.8,
+    "typical_portion_g": 250,
+    "health_tip": "这道菜营养均衡，但注意食堂做法通常用油较多，减脂期可以搭配一份清炒蔬菜。"
+  },
+  {
+    "dish_name": "红烧肉",
+    "aliases": [
+      "红烧五花肉",
+      "家常红烧肉"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 478,
+    "protein_per_100g": 13.2,
+    "fat_per_100g": 46.0,
+    "carbs_per_100g": 4.1,
+    "typical_portion_g": 150,
+    "health_tip": "脂肪与热量都偏高，建议浅尝几块，搭配清炒蔬菜和杂粮饭。"
+  },
+  {
+    "dish_name": "兰州拉面",
+    "aliases": [
+      "兰州牛肉面",
+      "牛肉拉面",
+      "拉面"
+    ],
+    "category": "面食",
+    "calories_per_100g": 125,
+    "protein_per_100g": 5.8,
+    "fat_per_100g": 3.9,
+    "carbs_per_100g": 17.8,
+    "typical_portion_g": 600,
+    "health_tip": "一碗面主食量足，汤底钠含量通常偏高，建议少喝汤、加一份牛肉或鸡蛋。"
+  },
+  {
+    "dish_name": "黄焖鸡米饭",
+    "aliases": [
+      "黄焖鸡饭",
+      "黄焖鸡"
+    ],
+    "category": "米饭套餐",
+    "calories_per_100g": 168,
+    "protein_per_100g": 9.5,
+    "fat_per_100g": 6.8,
+    "carbs_per_100g": 18.2,
+    "typical_portion_g": 550,
+    "health_tip": "鸡肉提供优质蛋白，但酱汁和米饭热量不低，减脂期可只吃七成米饭。"
+  },
+  {
+    "dish_name": "清炒西兰花",
+    "aliases": [
+      "蒜蓉西兰花",
+      "白灼西兰花",
+      "西兰花"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 45,
+    "protein_per_100g": 2.8,
+    "fat_per_100g": 2.4,
+    "carbs_per_100g": 4.2,
+    "typical_portion_g": 200,
+    "health_tip": "热量低、膳食纤维丰富，是很好的配菜，建议少油快炒。"
+  },
+  {
+    "dish_name": "宫保鸡丁",
+    "aliases": [
+      "宫爆鸡丁",
+      "宫保鸡丁盖饭"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 218,
+    "protein_per_100g": 14.6,
+    "fat_per_100g": 14.2,
+    "carbs_per_100g": 8.3,
+    "typical_portion_g": 220,
+    "health_tip": "鸡肉蛋白丰富，但花生和红油带来额外脂肪，建议配一份清淡蔬菜。"
+  },
+  {
+    "dish_name": "鱼香肉丝",
+    "aliases": [
+      "鱼香肉丝盖饭",
+      "鱼香肉丝"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 190,
+    "protein_per_100g": 9.8,
+    "fat_per_100g": 12.6,
+    "carbs_per_100g": 10.2,
+    "typical_portion_g": 220,
+    "health_tip": "下饭但油盐偏多，建议减少汤汁拌饭，搭配一份绿叶菜。"
+  },
+  {
+    "dish_name": "麻婆豆腐",
+    "aliases": [
+      "麻辣豆腐",
+      "麻婆豆腐盖饭"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 126,
+    "protein_per_100g": 7.5,
+    "fat_per_100g": 9.2,
+    "carbs_per_100g": 4.3,
+    "typical_portion_g": 250,
+    "health_tip": "植物蛋白不错，但红油和豆瓣酱含盐较高，高血压人群要少吃汤汁。"
+  },
+  {
+    "dish_name": "回锅肉",
+    "aliases": [
+      "回锅肉盖饭",
+      "蒜苗回锅肉"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 330,
+    "protein_per_100g": 11.8,
+    "fat_per_100g": 29.6,
+    "carbs_per_100g": 6.2,
+    "typical_portion_g": 180,
+    "health_tip": "五花肉脂肪高，建议控制在几片以内，搭配蔬菜和粗粮。"
+  },
+  {
+    "dish_name": "地三鲜",
+    "aliases": [
+      "土豆茄子青椒",
+      "东北地三鲜"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 148,
+    "protein_per_100g": 2.6,
+    "fat_per_100g": 10.8,
+    "carbs_per_100g": 10.7,
+    "typical_portion_g": 250,
+    "health_tip": "茄子吸油明显，热量比看起来高，建议少油做法并搭配蛋白质。"
+  },
+  {
+    "dish_name": "青椒土豆丝",
+    "aliases": [
+      "土豆丝",
+      "炒土豆丝",
+      "醋溜土豆丝"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 95,
+    "protein_per_100g": 2.1,
+    "fat_per_100g": 5.4,
+    "carbs_per_100g": 9.8,
+    "typical_portion_g": 200,
+    "health_tip": "土豆属于主食，吃了它要相应减少米饭；醋溜做法相对清爽。"
+  },
+  {
+    "dish_name": "干煸四季豆",
+    "aliases": [
+      "干煸豆角",
+      "四季豆"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 142,
+    "protein_per_100g": 4.8,
+    "fat_per_100g": 11.2,
+    "carbs_per_100g": 7.6,
+    "typical_portion_g": 200,
+    "health_tip": "四季豆一定要彻底炒熟，干煸做法用油较多，建议适量。"
+  },
+  {
+    "dish_name": "蒜蓉油麦菜",
+    "aliases": [
+      "油麦菜",
+      "清炒油麦菜",
+      "蒜蓉油麦菜"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 58,
+    "protein_per_100g": 2.2,
+    "fat_per_100g": 3.9,
+    "carbs_per_100g": 4.1,
+    "typical_portion_g": 200,
+    "health_tip": "热量很低，富含膳食纤维，是外卖里很好的加菜选择。"
+  },
+  {
+    "dish_name": "清蒸鲈鱼",
+    "aliases": [
+      "蒸鲈鱼",
+      "清蒸鱼"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 105,
+    "protein_per_100g": 18.6,
+    "fat_per_100g": 3.1,
+    "carbs_per_100g": 0.8,
+    "typical_portion_g": 250,
+    "health_tip": "优质蛋白、低脂肪，清蒸做法值得优先选择。"
+  },
+  {
+    "dish_name": "红烧排骨",
+    "aliases": [
+      "红烧猪排骨",
+      "排骨"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 265,
+    "protein_per_100g": 18.3,
+    "fat_per_100g": 19.4,
+    "carbs_per_100g": 4.5,
+    "typical_portion_g": 180,
+    "health_tip": "排骨蛋白质不错，但脂肪和酱汁热量较高，建议少喝汤汁。"
+  },
+  {
+    "dish_name": "糖醋里脊",
+    "aliases": [
+      "糖醋里脊肉",
+      "糖醋里脊"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 282,
+    "protein_per_100g": 12.5,
+    "fat_per_100g": 15.8,
+    "carbs_per_100g": 22.4,
+    "typical_portion_g": 200,
+    "health_tip": "糖醋汁含糖较高，外层面糊吸油，建议作为偶尔奖励。"
+  },
+  {
+    "dish_name": "锅包肉",
+    "aliases": [
+      "东北锅包肉",
+      "锅包肉"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 298,
+    "protein_per_100g": 14.2,
+    "fat_per_100g": 18.4,
+    "carbs_per_100g": 20.6,
+    "typical_portion_g": 200,
+    "health_tip": "油炸后热量较高，建议搭配蔬菜，控制在一小份。"
+  },
+  {
+    "dish_name": "可乐鸡翅",
+    "aliases": [
+      "可乐鸡翅中",
+      "可乐翅中"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 224,
+    "protein_per_100g": 17.8,
+    "fat_per_100g": 13.5,
+    "carbs_per_100g": 9.6,
+    "typical_portion_g": 200,
+    "health_tip": "鸡翅蛋白质尚可，但可乐酱汁含糖，建议去掉鸡皮。"
+  },
+  {
+    "dish_name": "木须肉",
+    "aliases": [
+      "木樨肉",
+      "木须肉盖饭"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 138,
+    "protein_per_100g": 8.6,
+    "fat_per_100g": 8.4,
+    "carbs_per_100g": 5.8,
+    "typical_portion_g": 220,
+    "health_tip": "荤素搭配较均衡，注意木耳一定要泡发彻底并炒熟。"
+  },
+  {
+    "dish_name": "京酱肉丝",
+    "aliases": [
+      "京酱肉丝卷",
+      "京酱肉丝"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 205,
+    "protein_per_100g": 13.8,
+    "fat_per_100g": 14.8,
+    "carbs_per_100g": 4.6,
+    "typical_portion_g": 200,
+    "health_tip": "酱料含盐偏高，建议少蘸酱，搭配黄瓜条和豆皮。"
+  },
+  {
+    "dish_name": "水煮肉片",
+    "aliases": [
+      "水煮里脊",
+      "水煮肉片"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 242,
+    "protein_per_100g": 13.2,
+    "fat_per_100g": 18.6,
+    "carbs_per_100g": 4.2,
+    "typical_portion_g": 250,
+    "health_tip": "肉片滑嫩但红油多，建议捞出不喝汤，搭配米饭适量。"
+  },
+  {
+    "dish_name": "酸菜鱼",
+    "aliases": [
+      "酸菜鱼片",
+      "老坛酸菜鱼"
+    ],
+    "category": "家常菜",
+    "calories_per_100g": 112,
+    "protein_per_100g": 12.8,
+    "fat_per_100g": 5.8,
+    "carbs_per_100g": 2.6,
+    "typical_portion_g": 300,
+    "health_tip": "鱼肉优质蛋白，酸菜和汤底钠含量高，建议少喝汤。"
+  },
+  {
+    "dish_name": "麻辣香锅",
+    "aliases": [
+      "麻辣香锅拌饭",
+      "香锅"
+    ],
+    "category": "快餐",
+    "calories_per_100g": 235,
+    "protein_per_100g": 9.6,
+    "fat_per_100g": 16.8,
+    "carbs_per_100g": 13.3,
+    "typical_portion_g": 300,
+    "health_tip": "食材丰富但油盐较重，建议多选蔬菜、少选丸子和宽粉。"
+  },
+  {
+    "dish_name": "麻辣烫",
+    "aliases": [
+      "冒菜",
+      "麻辣烫"
+    ],
+    "category": "快餐",
+    "calories_per_100g": 98,
+    "protein_per_100g": 5.8,
+    "fat_per_100g": 5.6,
+    "carbs_per_100g": 6.9,
+    "typical_portion_g": 500,
+    "health_tip": "清汤麻辣烫可以较均衡，少选油炸丸子，多选蔬菜和豆制品。"
+  },
+  {
+    "dish_name": "重庆小面",
+    "aliases": [
+      "重庆小面",
+      "小面"
+    ],
+    "category": "面食",
+    "calories_per_100g": 158,
+    "protein_per_100g": 4.6,
+    "fat_per_100g": 7.2,
+    "carbs_per_100g": 19.8,
+    "typical_portion_g": 400,
+    "health_tip": "小面油辣，主食量足，建议加青菜和蛋白质，少喝汤。"
+  },
+  {
+    "dish_name": "热干面",
+    "aliases": [
+      "武汉热干面",
+      "热干面"
+    ],
+    "category": "面食",
+    "calories_per_100g": 185,
+    "protein_per_100g": 5.2,
+    "fat_per_100g": 7.8,
+    "carbs_per_100g": 23.6,
+    "typical_portion_g": 350,
+    "health_tip": "芝麻酱提供健康脂肪但热量高，建议酱料减半。"
+  },
+  {
+    "dish_name": "炸酱面",
+    "aliases": [
+      "老北京炸酱面",
+      "炸酱面"
+    ],
+    "category": "面食",
+    "calories_per_100g": 152,
+    "protein_per_100g": 6.2,
+    "fat_per_100g": 5.4,
+    "carbs_per_100g": 20.8,
+    "typical_portion_g": 400,
+    "health_tip": "炸酱含盐和油较多，建议酱少一点、菜码多一点。"
+  },
+  {
+    "dish_name": "岐山臊子面",
+    "aliases": [
+      "臊子面",
+      "岐山面"
+    ],
+    "category": "面食",
+    "calories_per_100g": 128,
+    "protein_per_100g": 5.5,
+    "fat_per_100g": 5.8,
+    "carbs_per_100g": 15.2,
+    "typical_portion_g": 450,
+    "health_tip": "汤面较清爽，注意臊子油和盐，搭配蔬菜更均衡。"
+  },
+  {
+    "dish_name": "酸辣粉",
+    "aliases": [
+      "酸辣粉条",
+      "重庆酸辣粉"
+    ],
+    "category": "面食",
+    "calories_per_100g": 132,
+    "protein_per_100g": 2.8,
+    "fat_per_100g": 5.4,
+    "carbs_per_100g": 18.9,
+    "typical_portion_g": 400,
+    "health_tip": "酸辣粉以淀粉为主，蛋白质偏少，建议加鸡蛋或豆干。"
+  },
+  {
+    "dish_name": "螺蛳粉",
+    "aliases": [
+      "柳州螺蛳粉",
+      "螺蛳粉"
+    ],
+    "category": "面食",
+    "calories_per_100g": 145,
+    "protein_per_100g": 4.8,
+    "fat_per_100g": 5.6,
+    "carbs_per_100g": 19.8,
+    "typical_portion_g": 450,
+    "health_tip": "螺蛳粉汤底钠含量高，建议少喝汤，搭配青菜和蛋白质。"
+  },
+  {
+    "dish_name": "过桥米线",
+    "aliases": [
+      "云南过桥米线",
+      "米线"
+    ],
+    "category": "面食",
+    "calories_per_100g": 118,
+    "protein_per_100g": 6.5,
+    "fat_per_100g": 4.2,
+    "carbs_per_100g": 14.6,
+    "typical_portion_g": 550,
+    "health_tip": "米线汤底较清淡，建议多选肉片和蔬菜，少喝汤。"
+  },
+  {
+    "dish_name": "扬州炒饭",
+    "aliases": [
+      "扬州蛋炒饭",
+      "什锦炒饭"
+    ],
+    "category": "米饭套餐",
+    "calories_per_100g": 188,
+    "protein_per_100g": 5.6,
+    "fat_per_100g": 6.8,
+    "carbs_per_100g": 25.4,
+    "typical_portion_g": 350,
+    "health_tip": "炒饭油和主食量都较高，建议配一份清汤蔬菜。"
+  },
+  {
+    "dish_name": "蛋炒饭",
+    "aliases": [
+      "鸡蛋炒饭",
+      "蛋炒饭"
+    ],
+    "category": "米饭套餐",
+    "calories_per_100g": 174,
+    "protein_per_100g": 5.1,
+    "fat_per_100g": 6.2,
+    "carbs_per_100g": 24.3,
+    "typical_portion_g": 350,
+    "health_tip": "碳水为主，蛋白质不足，建议加鸡蛋和蔬菜。"
+  },
+  {
+    "dish_name": "咖喱鸡饭",
+    "aliases": [
+      "咖喱鸡肉饭",
+      "咖喱饭"
+    ],
+    "category": "米饭套餐",
+    "calories_per_100g": 156,
+    "protein_per_100g": 7.8,
+    "fat_per_100g": 5.9,
+    "carbs_per_100g": 18.6,
+    "typical_portion_g": 500,
+    "health_tip": "咖喱酱汁热量较高，建议米饭减量并搭配蔬菜。"
+  },
+  {
+    "dish_name": "卤肉饭",
+    "aliases": [
+      "台湾卤肉饭",
+      "卤肉饭"
+    ],
+    "category": "米饭套餐",
+    "calories_per_100g": 208,
+    "protein_per_100g": 7.4,
+    "fat_per_100g": 8.9,
+    "carbs_per_100g": 25.2,
+    "typical_portion_g": 450,
+    "health_tip": "卤肉脂肪和酱汁热量高，建议米饭减量、少浇汁。"
+  },
+  {
+    "dish_name": "煲仔饭",
+    "aliases": [
+      "广式煲仔饭",
+      "腊味煲仔饭"
+    ],
+    "category": "米饭套餐",
+    "calories_per_100g": 192,
+    "protein_per_100g": 7.2,
+    "fat_per_100g": 6.4,
+    "carbs_per_100g": 25.8,
+    "typical_portion_g": 450,
+    "health_tip": "煲仔饭锅巴香脆但油盐较高，建议搭配青菜。"
+  },
+  {
+    "dish_name": "黄焖排骨饭",
+    "aliases": [
+      "黄焖排骨",
+      "排骨饭"
+    ],
+    "category": "米饭套餐",
+    "calories_per_100g": 182,
+    "protein_per_100g": 9.2,
+    "fat_per_100g": 7.5,
+    "carbs_per_100g": 19.6,
+    "typical_portion_g": 550,
+    "health_tip": "排骨和米饭热量较高，建议控制份量并加蔬菜。"
+  },
+  {
+    "dish_name": "鸡腿饭",
+    "aliases": [
+      "大鸡腿饭",
+      "鸡腿饭"
+    ],
+    "category": "米饭套餐",
+    "calories_per_100g": 176,
+    "protein_per_100g": 10.8,
+    "fat_per_100g": 6.8,
+    "carbs_per_100g": 18.5,
+    "typical_portion_g": 500,
+    "health_tip": "鸡腿蛋白质充足，建议去皮吃，搭配蔬菜更均衡。"
+  },
+  {
+    "dish_name": "烤鸭饭",
+    "aliases": [
+      "广式烤鸭饭",
+      "烧鸭饭"
+    ],
+    "category": "米饭套餐",
+    "calories_per_100g": 212,
+    "protein_per_100g": 10.6,
+    "fat_per_100g": 10.2,
+    "carbs_per_100g": 20.4,
+    "typical_portion_g": 450,
+    "health_tip": "烤鸭皮脂肪高，建议去皮、少蘸酱，搭配蔬菜。"
+  },
+  {
+    "dish_name": "汉堡",
+    "aliases": [
+      "牛肉汉堡",
+      "汉堡包"
+    ],
+    "category": "快餐",
+    "calories_per_100g": 252,
+    "protein_per_100g": 12.4,
+    "fat_per_100g": 12.6,
+    "carbs_per_100g": 24.2,
+    "typical_portion_g": 220,
+    "health_tip": "汉堡热量和脂肪较高，建议不加酱、搭配无糖饮料。"
+  },
+  {
+    "dish_name": "炸鸡",
+    "aliases": [
+      "炸鸡块",
+      "炸鸡腿",
+      "美式炸鸡"
+    ],
+    "category": "快餐",
+    "calories_per_100g": 248,
+    "protein_per_100g": 18.2,
+    "fat_per_100g": 16.8,
+    "carbs_per_100g": 7.4,
+    "typical_portion_g": 200,
+    "health_tip": "油炸食品热量高，建议偶尔吃并搭配蔬菜。"
+  },
+  {
+    "dish_name": "薯条",
+    "aliases": [
+      "炸薯条",
+      "薯条"
+    ],
+    "category": "快餐",
+    "calories_per_100g": 298,
+    "protein_per_100g": 3.4,
+    "fat_per_100g": 15.2,
+    "carbs_per_100g": 38.6,
+    "typical_portion_g": 120,
+    "health_tip": "薯条以碳水和脂肪为主，建议小份分享。"
+  },
+  {
+    "dish_name": "披萨",
+    "aliases": [
+      "芝士披萨",
+      "披萨"
+    ],
+    "category": "快餐",
+    "calories_per_100g": 266,
+    "protein_per_100g": 11.8,
+    "fat_per_100g": 10.6,
+    "carbs_per_100g": 31.8,
+    "typical_portion_g": 200,
+    "health_tip": "披萨芝士和碳水较多，建议一到两块并搭配沙拉。"
+  },
+  {
+    "dish_name": "煎饺",
+    "aliases": [
+      "锅贴",
+      "煎饺"
+    ],
+    "category": "快餐",
+    "calories_per_100g": 218,
+    "protein_per_100g": 7.8,
+    "fat_per_100g": 10.2,
+    "carbs_per_100g": 23.6,
+    "typical_portion_g": 200,
+    "health_tip": "煎饺底部吸油，建议控制数量并搭配蔬菜。"
+  },
+  {
+    "dish_name": "小笼包",
+    "aliases": [
+      "小笼汤包",
+      "小笼包"
+    ],
+    "category": "早餐",
+    "calories_per_100g": 215,
+    "protein_per_100g": 8.6,
+    "fat_per_100g": 9.8,
+    "carbs_per_100g": 24.2,
+    "typical_portion_g": 150,
+    "health_tip": "小笼包汤汁含油盐，建议少蘸醋、搭配蔬菜。"
+  },
+  {
+    "dish_name": "鲜肉包",
+    "aliases": [
+      "肉包子",
+      "鲜肉包子"
+    ],
+    "category": "早餐",
+    "calories_per_100g": 198,
+    "protein_per_100g": 7.2,
+    "fat_per_100g": 7.8,
+    "carbs_per_100g": 25.4,
+    "typical_portion_g": 100,
+    "health_tip": "包子主食为主，建议选瘦肉馅并搭配豆浆或蔬菜。"
+  },
+  {
+    "dish_name": "油条",
+    "aliases": [
+      "炸油条",
+      "油条"
+    ],
+    "category": "早餐",
+    "calories_per_100g": 388,
+    "protein_per_100g": 6.9,
+    "fat_per_100g": 22.8,
+    "carbs_per_100g": 41.2,
+    "typical_portion_g": 80,
+    "health_tip": "油条高温油炸，热量高，建议偶尔吃半根。"
+  },
+  {
+    "dish_name": "皮蛋瘦肉粥",
+    "aliases": [
+      "瘦肉粥",
+      "皮蛋瘦肉粥"
+    ],
+    "category": "汤粥",
+    "calories_per_100g": 55,
+    "protein_per_100g": 2.8,
+    "fat_per_100g": 1.6,
+    "carbs_per_100g": 7.2,
+    "typical_portion_g": 400,
+    "health_tip": "粥品清淡，蛋白质偏低，建议加鸡蛋或瘦肉。"
+  },
+  {
+    "dish_name": "紫菜蛋花汤",
+    "aliases": [
+      "紫菜蛋汤",
+      "蛋花汤"
+    ],
+    "category": "汤粥",
+    "calories_per_100g": 28,
+    "protein_per_100g": 2.1,
+    "fat_per_100g": 1.4,
+    "carbs_per_100g": 1.8,
+    "typical_portion_g": 300,
+    "health_tip": "热量低，适合作为配汤，注意少放盐。"
+  },
+  {
+    "dish_name": "玉米排骨汤",
+    "aliases": [
+      "排骨玉米汤",
+      "玉米排骨汤"
+    ],
+    "category": "汤粥",
+    "calories_per_100g": 62,
+    "protein_per_100g": 4.6,
+    "fat_per_100g": 3.8,
+    "carbs_per_100g": 2.7,
+    "typical_portion_g": 350,
+    "health_tip": "汤品清甜，排骨脂肪较高，建议少喝浮油。"
+  }
+]

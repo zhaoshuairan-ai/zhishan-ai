@@ -1,0 +1,24 @@
+# 本地一键起服务（可选，需已安装 Docker Desktop）
+# 用法： docker compose up --build
+services:
+  app:
+    build: .
+    image: food-safety-ai:latest
+    container_name: food-safety-ai
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      FLASK_ENV: production
+      SERVE_FRONTEND: "1"
+      DATA_DIR: /data
+      UPLOAD_DIR: /data/uploads
+      DEMO_PASSWORD: ${DEMO_PASSWORD:-demo123456}
+    volumes:
+      # 数据库与图片必须落在持久化卷里，否则容器重启数据会丢失
+      - fsai-data:/data
+    restart: unless-stopped
+
+volumes:
+  fsai-data:

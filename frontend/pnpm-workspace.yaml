@@ -1,0 +1,4 @@
+# pnpm 11 的依赖构建脚本白名单：esbuild 需要执行 postinstall 才能提供二进制
+allowBuilds:
+  esbuild: true
+  vue-demi: true

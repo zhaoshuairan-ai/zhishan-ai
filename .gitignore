@@ -1,0 +1,62 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- Node / 前端 ----------
+node_modules/
+# 保留前端构建产物：clone 后不安装 Node 也能直接用 start.bat 启动
+frontend/dist-ssr/
+.pnpm-store/
+*.tsbuildinfo
+.vite/
+
+# ---------- 环境变量与密钥 ----------
+.env
+.env.local
+.env.*.local
+!.env.example
+frontend/.env
+frontend/.env.local
+!frontend/.env.example
+
+# ---------- 运行数据（不提交） ----------
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+backend/data/*.db
+backend/data/*.db-journal
+backend/data/*.db-wal
+backend/data/*.db-shm
+data/samples/*.json
+uploads/*
+!uploads/.gitkeep
+
+# ---------- 系统与编辑器 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.log
+
+# ---------- 安装包（不要提交 Node 安装包） ----------
+*.msi
+
+# ---------- 测试产物 ----------
+docs/responsive-report.json
+docs/screenshots_preview/
+test-results/
+playwright-report/
+
+# ---------- 运行日志 ----------
+logs/

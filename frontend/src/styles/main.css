@@ -1,0 +1,1444 @@
+@tailwind base;
+
+@tailwind components;
+
+
+
+/* =========================================================
+
+   智膳 AI · 全局样式
+
+   设计目标：专业、可信、清爽；移动端优先适配 360px 起。
+
+   ========================================================= */
+
+
+
+:root {
+
+  /* 品牌色：偏深的青绿，传达“检测/安全/专业” */
+
+  --brand: #0f7b6c;
+
+  --brand-600: #0b6558;
+
+  --brand-700: #084c42;
+
+  --brand-100: #e3f3ef;
+
+  --brand-50: #f1faf7;
+
+  --accent: #f0a232;
+
+
+
+  --bg: #fdfbf7;
+
+  --card: #ffffff;
+
+  --card-border: #ebebeb;
+
+  --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+
+  --text: #16211e;
+
+  --text-2: #47554f;
+
+  --muted: #7a8a84;
+
+  --border: #e3eae7;
+
+  --border-strong: #cfdad6;
+
+  --surface-2: #f6f9f8;
+
+  --surface-3: #eef4f2;
+
+
+
+  --ok: #2f9e6f;
+
+  --ok-bg: #e8f6ef;
+
+  --warn: #c47a08;
+
+  --warn-bg: #fdf3e0;
+
+  --danger: #cf4237;
+
+  --danger-bg: #fdecea;
+
+  --info: #2f6fb0;
+
+  --info-bg: #eaf2fb;
+
+
+
+  --radius: 16px;
+
+  --radius-sm: 10px;
+
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+
+  --shadow-hover: 0 4px 12px rgba(16, 36, 30, 0.08), 0 16px 36px rgba(16, 36, 30, 0.08);
+
+  --header-h: 62px;
+
+  --sidebar-w: 236px;
+
+  --tabbar-h: 60px;
+
+  --sidebar-bg: #2e4233;
+
+  --sidebar-text: #a3b1a6;
+
+  --sidebar-text-hover: #ffffff;
+
+  --sidebar-active: #405a46;
+
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+
+
+
+  /* Element Plus 主题变量覆盖 */
+
+  --el-color-primary: #0f7b6c;
+
+  --el-color-primary-light-3: #4ea094;
+
+  --el-color-primary-light-5: #82bcb2;
+
+  --el-color-primary-light-7: #b3d6cf;
+
+  --el-color-primary-light-8: #cde3de;
+
+  --el-color-primary-light-9: #e7f1ee;
+
+  --el-color-primary-dark-2: #0b6558;
+
+  --el-border-radius-base: 10px;
+
+  --el-font-size-base: 14px;
+
+}
+
+
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+
+
+html,
+
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+  background: var(--bg);
+
+  color: var(--text);
+
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', system-ui, -apple-system,
+
+    'Segoe UI', Roboto, sans-serif;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  -webkit-font-smoothing: antialiased;
+
+  -webkit-text-size-adjust: 100%;
+
+}
+
+
+
+body {
+
+  overflow-x: hidden;
+
+}
+
+
+
+#app {
+
+  min-height: 100vh;
+
+}
+
+
+
+a {
+
+  color: var(--brand);
+
+  text-decoration: none;
+
+}
+
+
+
+h1,
+
+h2,
+
+h3,
+
+h4 {
+
+  margin: 0;
+
+  font-weight: 650;
+
+  line-height: 1.35;
+
+  color: var(--text);
+
+}
+
+
+
+p {
+
+  margin: 0;
+
+}
+
+
+
+img {
+
+  max-width: 100%;
+
+}
+
+
+
+/* 长文本/链接在移动端强制换行，避免横向溢出 */
+
+.wrap-anywhere,
+
+.long-text {
+
+  overflow-wrap: anywhere;
+
+  word-break: break-word;
+
+}
+
+
+
+/* ---------- 布局容器 ---------- */
+
+.page {
+
+  width: 100%;
+
+  max-width: 1320px;
+
+  margin: 0 auto;
+
+  padding: 22px 24px 56px;
+
+}
+
+
+
+.page-narrow {
+
+  max-width: 980px;
+
+}
+
+
+
+.page-head {
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 16px;
+
+  margin-bottom: 18px;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+.page-title {
+
+  font-size: 24px;
+
+  letter-spacing: -0.2px;
+
+}
+
+
+
+.page-sub {
+
+  color: var(--muted);
+
+  font-size: 14px;
+
+  margin-top: 4px;
+
+}
+
+
+
+/* ---------- 卡片 ---------- */
+
+.card {
+
+  background: var(--card);
+
+  border: 1px solid var(--card-border);
+
+  border-radius: var(--radius);
+
+  box-shadow: var(--card-shadow);
+
+  padding: 20px;
+
+}
+
+
+
+.card + .card {
+
+  margin-top: 16px;
+
+}
+
+
+
+.card-title {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 12px;
+
+  margin-bottom: 14px;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+.card-title h3 {
+
+  font-size: 16.5px;
+
+}
+
+
+
+.card-title .hint {
+
+  color: var(--muted);
+
+  font-size: 12.5px;
+
+}
+
+
+
+.card-flat {
+
+  box-shadow: none;
+
+}
+
+
+
+/* ---------- 栅格 ---------- */
+
+.grid {
+
+  display: grid;
+
+  gap: 16px;
+
+}
+
+
+
+.grid-2 {
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+}
+
+
+
+.grid-3 {
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+}
+
+
+
+.grid-4 {
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+}
+
+
+
+.grid-side {
+
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+
+  align-items: start;
+
+}
+
+
+
+.stat-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 14px;
+
+}
+
+
+
+/* ---------- 通用小组件 ---------- */
+
+.chip {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  padding: 2px 9px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+
+  line-height: 20px;
+
+  background: var(--brand-50);
+
+  color: var(--brand-600);
+
+  border: 1px solid var(--brand-100);
+
+  white-space: nowrap;
+
+}
+
+
+
+.chip-muted {
+
+  background: #f2f5f4;
+
+  color: var(--muted);
+
+  border-color: var(--border);
+
+}
+
+
+
+.chip-warn {
+
+  background: var(--warn-bg);
+
+  color: var(--warn);
+
+  border-color: #f3e0bd;
+
+}
+
+
+
+.chip-danger {
+
+  background: var(--danger-bg);
+
+  color: var(--danger);
+
+  border-color: #f6cdc8;
+
+}
+
+
+
+.chip-ok {
+
+  background: var(--ok-bg);
+
+  color: var(--ok);
+
+  border-color: #c9e8d9;
+
+}
+
+
+
+.chip-info {
+
+  background: var(--info-bg);
+
+  color: var(--info);
+
+  border-color: #cfe1f4;
+
+}
+
+
+
+.text-muted {
+
+  color: var(--muted);
+
+}
+
+
+
+.text-small {
+
+  font-size: 12.5px;
+
+}
+
+
+
+.text-strong {
+
+  font-weight: 650;
+
+}
+
+
+
+.mono {
+
+  font-family: 'Cascadia Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+
+  font-size: 12.5px;
+
+}
+
+
+
+.divider {
+
+  height: 1px;
+
+  background: var(--border);
+
+  margin: 16px 0;
+
+}
+
+
+
+.row {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+.row-between {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+.spacer {
+
+  flex: 1 1 auto;
+
+}
+
+
+
+/* ---------- 免责声明 / 提示块 ---------- */
+
+.notice {
+
+  display: flex;
+
+  gap: 10px;
+
+  padding: 12px 14px;
+
+  border-radius: var(--radius-sm);
+
+  border: 1px solid #f0e2c8;
+
+  background: #fdf8ee;
+
+  color: #6b5320;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+
+}
+
+
+
+.notice-brand {
+
+  background: var(--brand-50);
+
+  border-color: #cfe7e1;
+
+  color: #275b52;
+
+}
+
+
+
+.notice-danger {
+
+  background: var(--danger-bg);
+
+  border-color: #f6cdc8;
+
+  color: #8b2f26;
+
+}
+
+
+
+
+
+.notice-warn {
+
+  background: #fdf8ee;
+
+  border-color: #f0e2c8;
+
+  color: #6b5320;
+
+}
+
+
+
+.mt-s {
+
+  margin-top: 8px;
+
+}
+
+
+
+.notice-info {
+
+  background: var(--info-bg);
+
+  border-color: #cfe1f4;
+
+  color: #234c76;
+
+}
+
+
+
+/* ---------- 空状态 ---------- */
+
+.empty {
+
+  text-align: center;
+
+  padding: 36px 16px;
+
+  color: var(--muted);
+
+}
+
+
+
+.empty-icon {
+
+  font-size: 38px;
+
+  color: var(--border-strong);
+
+  margin-bottom: 8px;
+
+}
+
+
+
+/* ---------- 骨架/加载 ---------- */
+
+.loading-block {
+
+  padding: 24px;
+
+  border-radius: var(--radius);
+
+  background:
+
+    linear-gradient(90deg, rgba(240, 244, 243, 0.4), rgba(240, 244, 243, 0.9), rgba(240, 244, 243, 0.4));
+
+  animation: pulse 1.4s ease-in-out infinite;
+
+}
+
+
+
+@keyframes pulse {
+
+  0%,
+
+  100% {
+
+    opacity: 0.6;
+
+  }
+
+  50% {
+
+    opacity: 1;
+
+  }
+
+}
+
+
+
+/* ---------- Element Plus 微调 ---------- */
+
+.el-button--large {
+
+  min-height: 44px;
+
+}
+
+
+
+.el-card {
+
+  border-radius: var(--radius);
+
+}
+
+
+
+.el-table {
+
+  --el-table-border-color: var(--border);
+
+}
+
+
+
+.el-dialog {
+
+  border-radius: var(--radius);
+
+}
+
+
+
+.el-drawer__body {
+
+  padding: 0;
+
+}
+
+
+
+/* ---------- 滚动条 ---------- */
+
+::-webkit-scrollbar {
+
+  width: 8px;
+
+  height: 8px;
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+
+  background: #cfdad6;
+
+  border-radius: 8px;
+
+}
+
+
+
+::-webkit-scrollbar-track {
+
+  background: transparent;
+
+}
+
+
+
+/* =========================================================
+
+   响应式
+
+   ========================================================= */
+
+
+
+@media (max-width: 1200px) {
+
+  .stat-grid {
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  }
+
+  .grid-4 {
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  }
+
+}
+
+
+
+@media (max-width: 1024px) {
+
+  .grid-side {
+
+    grid-template-columns: minmax(0, 1fr);
+
+  }
+
+  .grid-3 {
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  }
+
+}
+
+
+
+@media (max-width: 900px) {
+
+  .page {
+
+    padding: 16px 16px 92px; /* 底部留出移动端导航的高度 */
+
+  }
+
+  .page-title {
+
+    font-size: 21px;
+
+  }
+
+  .grid-2,
+
+  .grid-3,
+
+  .grid-4 {
+
+    grid-template-columns: minmax(0, 1fr);
+
+  }
+
+}
+
+
+
+@media (max-width: 560px) {
+
+  html,
+
+  body {
+
+    font-size: 14.5px;
+
+  }
+
+  .stat-grid {
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+
+  }
+
+  .card {
+
+    padding: 16px;
+
+    border-radius: 14px;
+
+  }
+
+  .page {
+
+    padding: 14px 13px 92px;
+
+  }
+
+  .page-title {
+
+    font-size: 19px;
+
+  }
+
+}
+
+
+
+@media (max-width: 380px) {
+
+  .page {
+
+    padding-left: 11px;
+
+    padding-right: 11px;
+
+  }
+
+}
+
+
+
+/* ---------- 打印（报告页） ---------- */
+
+@media print {
+
+  :root {
+
+    --bg: #ffffff;
+
+  }
+
+  html,
+
+  body {
+
+    background: #fff !important;
+
+    font-size: 12px;
+
+  }
+
+  .no-print,
+
+  .app-header,
+
+  .app-sidebar,
+
+  .mobile-tabbar,
+
+  .offline-banner {
+
+    display: none !important;
+
+  }
+
+  .app-main {
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    background: #fff !important;
+
+  }
+
+  .page {
+
+    max-width: 100%;
+
+    padding: 0 !important;
+
+  }
+
+  .card {
+
+    box-shadow: none !important;
+
+    border-color: #d8d8d8 !important;
+
+    break-inside: avoid;
+
+    page-break-inside: avoid;
+
+  }
+
+  .print-break {
+
+    break-before: page;
+
+  }
+
+  a[href]::after {
+
+    content: '';
+
+  }
+
+}
+
+
+
+/* ---------- 减少动效偏好 ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+  * {
+
+    animation-duration: 0.001ms !important;
+
+    transition-duration: 0.001ms !important;
+
+  }
+
+}
+
+
+
+/* 图片查看器：加深遮罩，避免底层内容干扰读图 */
+
+.el-image-viewer__mask {
+
+  background: rgba(0, 0, 0, 0.86) !important;
+
+}
+
+
+
+/* 校正页：营养成分表预览（按包装格式） */
+
+.nutrition-preview {
+
+  margin-top: 10px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  background: var(--card);
+
+}
+
+
+
+.nutrition-preview__head {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 8px 12px;
+
+  background: var(--brand-50);
+
+  font-size: 12.5px;
+
+  font-weight: 600;
+
+  color: var(--brand-700);
+
+}
+
+
+
+.nutrition-preview table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  font-size: 13px;
+
+}
+
+
+
+.nutrition-preview th,
+
+.nutrition-preview td {
+
+  padding: 6px 12px;
+
+  border-top: 1px solid var(--border);
+
+  text-align: left;
+
+}
+
+
+
+.nutrition-preview thead th {
+
+  background: var(--surface-2);
+
+  color: var(--muted);
+
+  font-weight: 600;
+
+  font-size: 12px;
+
+}
+
+
+
+.nutrition-preview td.missing {
+
+  color: var(--muted);
+
+}
+
+
+
+.chip {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 1px 8px;
+
+  border-radius: 999px;
+
+  background: var(--card);
+
+  border: 1px solid var(--border);
+
+  font-size: 11.5px;
+
+  font-weight: 500;
+
+  color: var(--muted);
+
+}
+
+
+
+/* =========================================================
+
+   深色主题（通过 html.dark 切换，跟随系统时由脚本决定）
+
+   ========================================================= */
+
+html.dark {
+
+  --bg: #0e1412;
+
+  --card: #161e1c;
+
+  --text: #e8efec;
+
+  --text-1: #e8efec;
+
+  --text-2: #b6c6c1;
+
+  --muted: #8ea39c;
+
+  --border: #27332f;
+
+  --border-strong: #34433f;
+
+  --brand: #23b39c;
+
+  --brand-600: #1a9b87;
+
+  --brand-700: #5fd0bc;
+
+  --brand-50: #142a25;
+
+  --brand-100: #1a3a32;
+
+  --ok-bg: #16352a;
+
+  --warn-bg: #3a2f1b;
+
+  --danger-bg: #3a2321;
+
+  --info-bg: #1a2b3d;
+
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 28px rgba(0, 0, 0, 0.32);
+
+  --shadow-hover: 0 6px 18px rgba(0, 0, 0, 0.45);
+
+  --surface-2: #1b2523;
+
+  --surface-3: #202b28;
+
+  --el-color-primary: #23b39c;
+
+  --el-color-primary-light-3: #1d9383;
+
+  --el-color-primary-light-5: #187a6d;
+
+  --el-color-primary-light-7: #135f56;
+
+  --el-color-primary-light-8: #114f47;
+
+  --el-color-primary-light-9: #123c35;
+
+  --el-color-primary-dark-2: #3cc9b2;
+
+  --el-bg-color: #161e1c;
+
+  --el-bg-color-overlay: #1b2523;
+
+  --el-text-color-primary: #e8efec;
+
+  --el-text-color-regular: #b6c6c1;
+
+  --el-border-color: #27332f;
+
+}
+
+
+
+html.dark body {
+
+  background: var(--bg);
+
+  color: var(--text);
+
+}
+
+
+
+html.dark .app-header,
+
+html.dark .mobile-header,
+
+html.dark .mobile-tabbar {
+
+  background: rgba(22, 30, 28, 0.96);
+
+  border-color: var(--border);
+
+}
+
+
+
+html.dark .card {
+
+  background: var(--card);
+
+}
+
+
+
+html.dark .answer,
+
+html.dark .composer,
+
+html.dark .settings-group,
+
+html.dark .settings-row,
+
+html.dark .logout-row,
+
+html.dark .el-dialog,
+
+html.dark .el-drawer {
+
+  background: var(--card);
+
+}
+
+
+
+html.dark .settings-row {
+
+  border-color: var(--border);
+
+}
+
+
+
+html.dark .el-input__wrapper,
+
+html.dark .el-textarea__inner {
+
+  background-color: #1b2623;
+
+  box-shadow: 0 0 0 1px var(--border) inset;
+
+}
+
+
+
+html.dark .el-table {
+
+  --el-table-bg-color: var(--card);
+
+  --el-table-tr-bg-color: var(--card);
+
+  --el-table-header-bg-color: #1b2523;
+
+  --el-table-row-hover-bg-color: #1f2b28;
+
+  --el-table-border-color: var(--border);
+
+  --el-table-text-color: var(--text);
+
+}
+
+
+
+html.dark .logout-row {
+
+  color: #ff9b91;
+
+}
+
+
+
+html.dark .user-bubble {
+
+  background: #1a8575;
+
+  color: #fff;
+
+}
+
+
+
+html.dark .login-page,
+
+html.dark .admin-login {
+
+  background: #0e1412 !important;
+
+}
+
+
+
+/* Utilities 放在最后，确保 gap-6、p-6 等工具类不会被上面的通用 .grid 规则覆盖。 */
+
+@tailwind utilities;
+
+/* 全局卡片：统一极浅描边 + 柔和阴影，覆盖页面级旧样式 */
+body .card {
+  background: #ffffff !important;
+  border: 1px solid #ebebeb !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* 主内容区与 body 使用同一浅灰背景，保证卡片对比度 */
+html,
+body,
+#app {
+  min-height: 100vh;
+  background: #fdfbf7 !important;
+}
+
+.app-shell,
+.app-main {
+  min-height: 100vh !important;
+  background: #fdfbf7 !important;
+}
+
+.admin-shell,
+.admin-main {
+  min-height: 100vh;
+  background: #fdfbf7 !important;
+}
+
+/* 奶油米色主内容区 / 导航栏 */
+.app-header,
+.mobile-header {
+  background: rgba(253, 251, 247, 0.94) !important;
+  border-bottom: 1px solid #e8e2d8 !important;
+  backdrop-filter: blur(10px);
+}
+
+.mobile-tabbar {
+  background: rgba(253, 251, 247, 0.97) !important;
+  border-top: 1px solid #e8e2d8 !important;
+}
+
+.admin-mobile-head {
+  background: #fdfbf7 !important;
+  color: #333333 !important;
+  border-bottom: 1px solid #e8e2d8 !important;
+}
+
+.admin-mobile-head .icon-btn,
+.admin-mobile-head .mobile-title {
+  color: #333333 !important;
+}
+
+/* 奶油底色上的文字对比度 */
+body {
+  color: #333333;
+}
+
+/* 强制主内容区奶油米色，消除页面级死白 */
+html,
+body,
+#app,
+.app-shell,
+.app-main,
+.admin-shell,
+.admin-main,
+.el-main,
+.main-content {
+  background: #fdfbf7 !important;
+}
+
+.page,
+.page-wrap,
+.app-content {
+  background: transparent !important;
+}

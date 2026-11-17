@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>暂时离线 · 智膳 AI</title>
+    <style>
+      :root { color-scheme: light; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #f5f8f7;
+        font-family: 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+        color: #16211e;
+        padding: 24px;
+      }
+      .card {
+        max-width: 420px;
+        background: #fff;
+        border: 1px solid #e3eae7;
+        border-radius: 18px;
+        padding: 32px 26px;
+        text-align: center;
+        box-shadow: 0 12px 32px rgba(16, 36, 30, 0.08);
+      }
+      .mark {
+        width: 56px; height: 56px; margin: 0 auto 14px; border-radius: 16px;
+        background: linear-gradient(140deg, #12a08b, #0b6558);
+        display: grid; place-items: center; color: #fff; font-size: 26px; font-weight: 700;
+      }
+      h1 { font-size: 19px; margin: 0 0 8px; }
+      p { font-size: 13.5px; line-height: 1.8; color: #6b7a76; margin: 0 0 6px; }
+      button {
+        margin-top: 18px; border: none; background: #0f7b6c; color: #fff;
+        padding: 11px 22px; border-radius: 999px; font-size: 14px; cursor: pointer;
+      }
+      .tip { margin-top: 16px; font-size: 12px; color: #9aa7a2; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="mark">食</div>
+      <h1>当前处于离线状态</h1>
+      <p>分析记录、图片与报告都保存在服务器上，需要联网才能读取。</p>
+      <p>请检查网络连接后重试；已上传但尚未完成的 AI 分析会在恢复网络后继续。</p>
+      <button onclick="location.reload()">重新加载</button>
+      <div class="tip">智膳 AI · 全场景健康膳食管家</div>
+    </div>
+  </body>
+</html>

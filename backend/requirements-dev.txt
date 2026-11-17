@@ -1,0 +1,10 @@
+-r requirements.txt
+
+# 测试与开发工具
+pytest>=8.0,<9.0
+
+# 响应式页面自动化检查（scripts/responsive_check.py）
+playwright>=1.48
+
+# 部署二维码生成（scripts/generate_qr.py）
+qrcode[pil]>=7.4
