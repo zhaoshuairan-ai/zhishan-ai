@@ -222,12 +222,12 @@ backend\.venv\Scripts\python.exe scripts\pwa_check.py
 [PASS] 缓存中没有 /api 数据 — 11 个缓存项，0 个 API 项
 [PASS] 应用外壳（JS/CSS）已预缓存 — fsai-v2-html、fsai-v2-static
 [PASS] 断网后可打开缓存页面并提示离线 — 页面已渲染并提示离线
-[PASS] 报告可打印为 PDF — 703 KB -> sample-report.pdf
+[PASS] 报告可打印为 PDF — 703 KB -> report.pdf
 [PASS] 可通过局域网 IP 访问生产服务 — http://<局域网IP>:8000
 通过 6 / 6 项
 ```
 
-- 生成的示例 PDF：`docs/sample-report.pdf`（A4，Chromium 打印引擎输出，含完整报告内容）。
+- 生成的示例 PDF 由 `scripts/pwa_check.py` 在本地生成，不随仓库提交。
 - Service Worker 的策略：`/api/**` 永不缓存（实测缓存项中 0 个 API 请求）；静态资源 stale-while-revalidate；
   安装阶段解析 `index.html` 预缓存带哈希的 JS/CSS，保证首次访问后断网也能启动应用外壳。
 - **修复记录**：初版 SW 只预缓存了 `index.html`，断网后 `#app` 为空（JS 未缓存）。
@@ -260,7 +260,7 @@ backend\.venv\Scripts\python.exe scripts\mobile_flow_check.py
 通过 10 / 10 项
 ```
 
-截图：`docs/screenshots/mobile-flow-1-upload.png` ~ `mobile-flow-4-history.png`（手机端各阶段）。
+截图：`docs/images/dashboard-mobile.jpg`、`docs/images/result-mobile.jpg`、`docs/images/analyze-mobile.jpg` 为当前界面。
 
 ---
 
@@ -302,7 +302,7 @@ python scripts/admin_check.py --base-url http://127.0.0.1:8000 --username <管�
 ## 九、响应式与横向溢出检查（77 组合）
 
 ```powershell
-backend\.venv\Scripts\python.exe scripts\responsive_check.py --screenshots docs/screenshots
+backend\.venv\Scripts\python.exe scripts\responsive_check.py --screenshots logs/responsive-screens
 ```
 
 - 宽度：**360 / 390 / 430 / 768 / 1024 / 1366 / 1920**
@@ -311,7 +311,7 @@ backend\.venv\Scripts\python.exe scripts\responsive_check.py --screenshots docs/
 - 手机模拟：`is_mobile=True`、`has_touch=True`
 
 **实际结果**：`77 个页面/宽度组合，0 处横向溢出`；最大溢出值 `0`。
-证据：`docs/responsive-report.json`、`docs/screenshots/*.png`（含每个组合的整页截图）。
+证据报告由 `scripts/responsive_check.py` 在本地生成，不随仓库提交；当前界面截图见 `docs/images/`。
 
 修复记录（真实修过的两个移动端问题）：
 
@@ -392,7 +392,7 @@ cd ..
 backend\.venv\Scripts\python.exe scripts\api_smoke_test.py
 
 # 4) 响应式检查（77 组合 + 截图）
-backend\.venv\Scripts\python.exe scripts\responsive_check.py --screenshots docs/screenshots
+backend\.venv\Scripts\python.exe scripts\responsive_check.py --screenshots logs/responsive-screens
 
 # 5) 生产模式
 .\start_prod.bat
